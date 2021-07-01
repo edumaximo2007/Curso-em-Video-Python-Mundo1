@@ -1,0 +1,17 @@
+from math import radians, sin, tan, cos
+print('-=-'*10)
+print('''\033[7m           DESAFIO 18          \033[m''')
+print('-=-'*10)
+print('')
+print('\033[1mFaça um programa que leia um ângulo qualquer e mostre na tela o valor do seno, cosseno e tangente desse ângulo.\033[m')
+print('')
+ag = float(input('Digite o ângulo que você deseja: '))
+se = sin(radians(ag))
+print('O ângulo de {}° tem o seno de {:.2f}'.format(ag, se))
+cos = cos(radians(ag))
+print('O ângulo de {}° tem o cosseno de {:.2f}'.format(ag, cos))
+ta = tan(radians(ag))
+print('O ângulo de {}° tem a tangente de {:.2f}'.format(ag, ta))
+print('')
+print('\033[1mParabéns você concluiu esta tarefa\033[m')
+

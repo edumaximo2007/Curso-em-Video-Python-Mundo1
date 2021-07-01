@@ -1,0 +1,12 @@
+print('-=-'*10)
+print('''\033[7m         DESAFIO 10           \033[m''')
+print('-=-'*10)
+print('')
+print('Crie um programa que leia quanto dinheiro uma pessoa tem na carteira e mostre quantos dólares ela pode comprar.')
+print('')
+dolar = float(input('Cotação do dólar hoje: R$'))
+carteira = float(input('Dinheiro em carteira: R$'))
+n = carteira/dolar
+print('Com \033[7;40mR${:.2f}\033[m você pode comprar \033[7;40mUSD${:.2f}\033[m'.format(carteira, n))
+print('')
+print('\033[1mParabéns você concluiu esta tarefa!\033[m')

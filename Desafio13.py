@@ -1,0 +1,17 @@
+print('-=-'*10)
+print('''\033[7m          DESAFIO 13          \033[m''')
+print('-=-'*10)
+print('\033[1mFaça um algoritmo que leia o salário de um funcionário e mostre seu novo salário, com 15% de aumento.\033[m')
+print('')
+nome = str(input('Qual e o seu nome? '))
+per = str(input('Podemos começar {}? '.format(nome)))
+print('')
+sa = float(input('O salário atual de {}:R$ '.format(nome)))
+q = float(input('Quantos % {} teve de aumento: '.format(nome)))
+n = sa +(sa*q/100)
+print('O salário de {} e R${:.2f} com {}% de aumento o salário ficou em R${:.2f}'.format(nome, sa, q, n))
+#n = sa*0.15
+#n1 = n+sa
+#print('O Salário de {:.2}, com 15% de aumento e R${:.2}'.format(nome, n1))
+print('')
+print('\033[1mParabéns {} você concluiu sua tarefa!\033[m'.format(nome))

@@ -1,0 +1,16 @@
+from random import choice
+print('-=-'*10)
+print('''\033[7m          DESAFIO 19          \033[m''')
+print('-=-'*10)
+print('\033[1mUm professor quer sorte um dos seus quatro alunos para apagar o quadro.\033[m')
+print('\033[1mFaça um programa que a ajude ele, lendo o nome deles e escrevendo o nome escolhido.\033[m')
+print('')
+print('O aluno que for sorteado vai apagar o quadro')
+print('')
+n1 = str(input('Primeiro aluno: '))
+n2 = str(input('Segundo aluno: '))
+n3 = str(input('Terceiro aluno: '))
+n4 = str(input('Quarto nome: '))
+lis = [n1, n2, n3, n4]
+n = choice(lis)
+print('É o grande sortudo que vai apagar essa bagaça e {}'.format(n))
